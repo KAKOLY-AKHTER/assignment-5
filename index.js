@@ -4,12 +4,13 @@ function getElement(id) {
   return element;
 }
 
-let count = 0;
+let heartCount = 0;
+let copyCount = 0;
 const heartBtns = document.getElementsByClassName('white-heart');
 for (const whiteBtn of heartBtns) {
   whiteBtn.addEventListener('click', function () {
 
-    getElement('red-heart').innerText = count++;
+    getElement('red-heart').innerText = heartCount++;
 
   })
 
@@ -32,7 +33,7 @@ for (const copyBtn of copyBtns) {
         console.error('Copy failed:', err);
       });
 
-    getElement('copy-count').innerText = count++;
+    getElement('copy-count').innerText = copyCount++;
 
   })
 
