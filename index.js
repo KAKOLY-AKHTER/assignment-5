@@ -15,6 +15,16 @@ for (const whiteBtn of heartBtns) {
 
 }
 
+const copyBtns = document.getElementsByClassName('copy-btn');
+for (const copyBtn of copyBtns) {
+  copyBtn.addEventListener('click', function () {
+
+    getElement('copy-count').innerText = count++;
+
+  })
+
+}
+
 const calls = document.getElementsByClassName('calls-btn');
 for (const call of calls) {
   call.addEventListener('click', function () {
@@ -65,6 +75,15 @@ for (const call of calls) {
 
 
   });
+
+
+  getElement("btn-clear").addEventListener("click", function () {
+  getElement("call-history").innerHTML="";
+
+});
+
+
+
 
 
 }
