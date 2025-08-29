@@ -6,16 +6,16 @@
 Answer:~
 
 getElementById:  
-Selects a single element based on its unique ID. It always returns one element.
+getElementById() selects one specific element using its unique id. It always returns a single element.
 
-getElementsByClassName:  
-Selects all elements with the given class name. Returns an HTMLCollection.
+getElementsByClassName:   
+Selects all elements with the given class name. Returns an html collection.
 
-querySelector:  
-Selects the first element that matches a CSS selector. Returns a single element.
+querySelector: 
+Selects the first element that matches a css selector. Returns a single element.
 
 querySelectorAll:  
-Selects all elements that match a CSS selector. It returns a NodeList.
+Selects all elements that match a css selector. It returns a nodeList.
 
 
 
@@ -24,9 +24,9 @@ Selects all elements that match a CSS selector. It returns a NodeList.
 
 answer:~
 
-To add a new element to the DOM, I first create it using document.createElement("div"). Then I set its content with .textContent or .innerHTML, and style it using .classList.add().
+To add a new element to the dom, I first create it using document.createElement("div"). Then I set its content with .textContent or .innerHTML, and style it using .classList.add().
 After that, I find the parent element using getElementById() or querySelector() and insert my new element using appendChild().
-This way, I can dynamically update the HTML with JavaScript.
+This way, I can dynamically update the html with javaScript.
 
 
 
@@ -37,7 +37,7 @@ This way, I can dynamically update the HTML with JavaScript.
 
 Answer:~
 
-Event bubbling means that when I click on a child element, the event first triggers there and then moves upward through its parent elements in the DOM tree—like the parent, grandparent, and so on.
+Event bubbling means that if I click on a small element—like a button—the event first triggers on that button. Then it moves upward step by step to its parent, grandparent, and even the whole section or body. This way, the event spreads through the dom tree, making it easier to handle things from the parent level.
 
 
 
@@ -57,6 +57,7 @@ This is useful because it makes the code cleaner, reduces memory usage, and work
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
 Answer:~
+
 preventDefault() :- This method stops the browser from performing its default action. For example, clicking a link normally navigates to another page, or submitting a form reloads the page. Using preventDefault() prevents that default behavior.
 
 stopPropagation() :- Normally, when an event is triggered on a child element, it travels upward through its parent, grandparent, and so on—this is called event bubbling.
