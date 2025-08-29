@@ -5,17 +5,17 @@
 
 Answer:~
 
-getElementById:  
-getElementById() selects one specific element using its unique id. It always returns a single element.
+getElementById():  
+This method selects a specific element with a unique ID. It always returns a single element.
 
-getElementsByClassName:   
-Selects all elements with the given class name. Returns an html collection.
+getElementsByClassName():   
+With this I can select multiple elements that have the same class name. It returns an HTMLCollection.
 
-querySelector: 
-Selects the first element that matches a css selector. Returns a single element.
+querySelector(): 
+It works like a CSS selector. It returns the first element that I want to match.
 
-querySelectorAll:  
-Selects all elements that match a css selector. It returns a nodeList.
+querySelectorAll():  
+Returns all matching elements as a NodeList.
 
 
 
@@ -24,9 +24,9 @@ Selects all elements that match a css selector. It returns a nodeList.
 
 answer:~
 
-To add a new element to the dom, I first create it using document.createElement("div"). Then I set its content with .textContent or .innerHTML, and style it using .classList.add().
-After that, I find the parent element using getElementById() or querySelector() and insert my new element using appendChild().
-This way, I can dynamically update the html with javaScript.
+If I want to add a new element to the DOM, I first create a div with document.createElement("div"). Then I add content with .textContent or .innerHTML, and apply style with .classList.add().
+Then I find the parent element where I want to add it with getElementById() or querySelector(). Then I add the new element inside the parent with appendChild().
+This is how HTML can be updated dynamically with JavaScript
 
 
 
@@ -37,7 +37,7 @@ This way, I can dynamically update the html with javaScript.
 
 Answer:~
 
-Event bubbling means that if I click on a small element—like a button—the event first triggers on that button. Then it moves upward step by step to its parent, grandparent, and even the whole section or body. This way, the event spreads through the dom tree, making it easier to handle things from the parent level.
+Event bubbling means that when an event like a click occurs on a child element, it first triggers on that element, then moves upward to its parent,  grandparent, and even the whole section or body. This allows us to handle events from a parent level, using less code.
 
 
 
@@ -47,8 +47,8 @@ Event bubbling means that if I click on a small element—like a button—the ev
 
 Answer:~
 
-Event Delegation means I attach a single event listener to a parent element instead of adding separate listeners to each child.
-When a child element is clicked, the event bubbles up to the parent, and I use event.target to check which child was clicked.
+Event delegation means that instead of having separate listeners for each child element, I place a single listener on the parent element.When a child is clicked, the event bubbles up to the parent. Then I use event.target to know which child was clicked.
+
 This is useful because it makes the code cleaner, reduces memory usage, and works even if new child elements are added dynamically.
 
 
@@ -58,10 +58,11 @@ This is useful because it makes the code cleaner, reduces memory usage, and work
 
 Answer:~
 
-preventDefault() :- This method stops the browser from performing its default action. For example, clicking a link normally navigates to another page, or submitting a form reloads the page. Using preventDefault() prevents that default behavior.
+preventDefault() :
+This stops the browser's default behavior. For example, prevents form submission from reloading the page.
 
-stopPropagation() :- Normally, when an event is triggered on a child element, it travels upward through its parent, grandparent, and so on—this is called event bubbling.
-But if I use stopPropagation(), this bubbling process stops. That means even if the child element triggers the event, the parent’s event listener won’t run.
+stopPropagation() :
+This stops event bubbling. This means that even if an event is triggered on a child element, the parent-level listener will no longer run.
 
 
 
