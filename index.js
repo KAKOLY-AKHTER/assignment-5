@@ -57,7 +57,7 @@ for (const call of calls) {
 
     const coinCount = Number(getElement("coin").innerText);
 
-    if (coinCount < 20 || coinCount === 0) {
+    if (coinCount < 20 ) {
       alert('❌ Not enough coins. You need at least 20 coins.');
       return;
     }
