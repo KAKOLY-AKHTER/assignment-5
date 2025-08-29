@@ -49,8 +49,8 @@ for (const call of calls) {
 
     let newDate = new Date();
 
-    const serviceName = call.parentNode.parentNode.children[1].children[1].innerText;
-    // console.log(serviceName);
+    const serviceName = call.parentNode.parentNode.children[1].children[0].innerText;
+    console.log(serviceName);
 
     const number = call.parentNode.parentNode.children[1].children[2].innerText;
     // console.log(number);
@@ -75,10 +75,10 @@ for (const call of calls) {
     const cartContainer = getElement("call-history");
     const newCart = document.createElement("div");
     newCart.innerHTML = `
-    <div class="bg-gray-200 rounded-xl flex justify-between p-4 mt-3">
+    <div class="bg-gray-200 rounded-xl flex justify-between px-2 py-3 mt-3">
                   
                   <div class=" space-y-1 ">
-                    <h2 class="font-bold">${serviceName}</h2>
+                    <h2 class="font-bold text-sm">${serviceName}</h2>
                     <h2 class="text-base  text-gray-700 text-left">${number}</h2>
                   </div>
                <div class=flex>
