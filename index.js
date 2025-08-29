@@ -64,7 +64,7 @@ for (const call of calls) {
     }
 
     else {
-      alert(`📞 Calling... \n${serviceName}: ${number}`);
+      alert(`📞 Calling... \n${serviceName} : ${number}`);
     }
 
     const newCoin = coinCount - 20;
@@ -77,9 +77,9 @@ for (const call of calls) {
     newCart.innerHTML = `
     <div class="bg-gray-200 rounded-xl flex justify-between p-4 mt-3">
                   
-                  <div class="">
-                    <h2 class="font-bold">📞 ${serviceName}</h2>
-                    <h2 class="">${number}</h2>
+                  <div class=" space-y-1 ">
+                    <h2 class="font-bold">${serviceName}</h2>
+                    <h2 class="text-base  text-gray-700 text-left">${number}</h2>
                   </div>
                <div class=flex>
                <h2>${newDate.toLocaleTimeString()}</h2>
