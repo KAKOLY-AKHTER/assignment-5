@@ -63,7 +63,7 @@ This is useful because it makes the code cleaner, reduces memory usage, and work
 Answer:~
 preventDefault() :- This method stops the browser from performing its default action. For example, clicking a link normally navigates to another page, or submitting a form reloads the page. Using preventDefault() prevents that default behavior.
 .
-stopPropagation() :Normally, when an event is triggered on a child element, it travels upward through its parent, grandparent, and so on—this is called event bubbling.
+stopPropagation() :- Normally, when an event is triggered on a child element, it travels upward through its parent, grandparent, and so on—this is called event bubbling.
 But if I use stopPropagation(), this bubbling process stops. That means even if the child element triggers the event, the parent’s event listener won’t run.
 
 

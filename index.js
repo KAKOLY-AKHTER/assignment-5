@@ -26,7 +26,7 @@ for (const copyBtn of copyBtns) {
     navigator.clipboard.writeText(number)
       .then(() => {
 
-        alert(`Hotline number copied successfully! ${number}`);
+        alert(`Hotline number copied successfully! \n${number}`);
          
       })
       .catch(err => {
@@ -64,7 +64,7 @@ for (const call of calls) {
     }
 
     else {
-      alert(`📞 Calling ${serviceName} ${number}`);
+      alert(`📞 Calling... \n${serviceName}: ${number}`);
     }
 
     const newCoin = coinCount - 20;
