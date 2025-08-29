@@ -64,7 +64,7 @@ for (const call of calls) {
     }
 
     else {
-      alert(`📞 Calling... \n${serviceName} : ${number}`);
+      alert(`📞 Calling... \n${serviceName} ${number}`);
     }
 
     const newCoin = coinCount - 20;
