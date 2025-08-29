@@ -44,14 +44,14 @@ for (const copyBtn of copyBtns) {
 const calls = document.getElementsByClassName('calls-btn');
 for (const call of calls) {
   call.addEventListener('click', function (e) {
-    const clickedBtn = e.currentTarget;
+    const clickedBtn = e.target;
 
 
     let newDate = new Date();
 
-    const serviceName = e.currentTarget.parentNode.parentNode.children[1].children[0].innerText;
+    const serviceName = clickedBtn.parentNode.parentNode.children[1].children[0].innerText;
 
-    const number = e.currentTarget.parentNode.parentNode.children[1].children[2].innerText;
+    const number = clickedBtn.parentNode.parentNode.children[1].children[2].innerText;
     // console.log(number);
 
 
