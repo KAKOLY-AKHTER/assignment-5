@@ -5,21 +5,17 @@
 
 Answer:~
 
-getElementById:~
-Using getElementById("id"), a specific ID is searched, and it always returns a single element.
+getElementById:  
+Selects a single element based on its unique ID. It always returns one element.
 
+getElementsByClassName:  
+Selects all elements with the given class name. Returns an HTMLCollection.
 
-getElementsByClassName:~
-Using getElementsByClassName("className"), all elements with the specified class name are selected, and it returns a collection of elements.
+querySelector:  
+Selects the first element that matches a CSS selector. Returns a single element.
 
-
-querySelector :~
-Using querySelector("selector"), a specific element matching the CSS selector is selected. It returns the first matching element.
-
-
-
-querySelectorAll:~
-Using querySelectorAll("selector"), all elements that match the given CSS selector are selected, and it returns a collection of elements.
+querySelectorAll:  
+Selects all elements that match a CSS selector. It returns a NodeList.
 
 
 
@@ -62,7 +58,7 @@ This is useful because it makes the code cleaner, reduces memory usage, and work
 
 Answer:~
 preventDefault() :- This method stops the browser from performing its default action. For example, clicking a link normally navigates to another page, or submitting a form reloads the page. Using preventDefault() prevents that default behavior.
-.
+
 stopPropagation() :- Normally, when an event is triggered on a child element, it travels upward through its parent, grandparent, and so on—this is called event bubbling.
 But if I use stopPropagation(), this bubbling process stops. That means even if the child element triggers the event, the parent’s event listener won’t run.
 
